@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+                         initial-scale=1.0">
+    <title>Savior Muzoora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">Login / Registration Form</h1>
+
+    </header>
+
+    <!-- container div -->
+    <div class="container">
+
+        <!-- upper button section to select
+             the login or signup form -->
+        <div class="slider"></div>
+        <div class="btn">
+            <button class="login">Login</button>
+            <button class="signup">Register</button>
+        </div>
+
+        <!-- Form section that contains the
+             login and the signup form -->
+        <div class="form-section">
+            <!-- login form -->
+
+            <div class="login-box">
+                <h3 class="title">Enter Your Credentials Here</h3>
+                <form id="loginForm" onreset="resetErrors()">
+
+
+                    <p>
+                        <label for="email">E-mail Address:</label>
+                        <input type="email" id="email" name="Email" placeholder="Enter your email" class="email ele"
+                            required />
+                        <span id="email-error" class="error-message"></span>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="Password" placeholder="Enter your password"
+                            class="password ele" required />
+                        <span id="password-error" class="error-message"></span>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="rememberme" name="RememberMe" />
+                        <label for="rememberme">Remember Me</label>
+                        <span id="rememberme-error" class="error-message"></span>
+                    </p>
+                    <p>
+                        <button type="submit" id=btn-login class="clkbtn" > Login </button>
+                        <button type="reset" id="btn-resetlogin" class="clkbtn" >Reset</button>
+                    </p>
+                </form>
+            </div>
+
+
+
+            <!-- signup form -->
+            <div class="signup-box">
+                <h3 class="title">Enter Your Credentials Here</h3>
+                <form id="registerForm" onreset="resetErrors()">
+
+                    <input type="text" id="firstName" name="FirstName" placeholder="First Name" class="ele" required>
+                    <div id="firstName-error" class="alert"></div>
+                    <input type="text" id="lastName" name="LastName" placeholder="Last Name" class="ele" required>
+                    <div id="lastName-error" class="alert"></div>
+                    <input type="text" id="username" name="UserName" placeholder="Username" class="ele" required>
+                    <div id="username-error" class="alert"></div>
+                    <input type="email" id="regemail" name="Email" placeholder="Email" class="ele" required>
+                    <div id="regemail-error" class="alert"></div>
+                    <input type="password" id="regpassword" name="Password" placeholder="Password" class="ele" required>
+                    <div id="regpassword-error" class="alert"></div>
+                    <input type="tel" id="phone" name="PhoneNumber" placeholder="Phone Number" class="ele" required>
+                    <div id="phone-error" class="alert"></div>
+                    <input type="date" id="dob" name="DOB" placeholder="Date of Birth" class="ele" required>
+                    <div id="dob-error" class="alert"></div>
+                    <p>
+                        <button type="submit" id="btn-register" class="clkbtn" >Register</button>
+                        <button type="reset" id="btn-resetregistration"  class="clkbtn" >Reset</button>
+                    </p>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
