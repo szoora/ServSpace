@@ -69,6 +69,7 @@ select {
 textarea {
     resize: vertical;
 }
+
 input[type="tel"],
 input[type="date"],
 input[type="text"],
@@ -82,7 +83,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 input[type="login"],
@@ -95,7 +96,7 @@ input[type="checkbox"] {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 input[type="login"]:hover,
@@ -137,7 +138,7 @@ header {
 }
 
 .heading {
-    color: green;
+    color: rgb(11, 126, 146);
 }
 
 .title {
@@ -180,8 +181,8 @@ header {
     width: 150px;
     border-radius: 50px;
     background-image: linear-gradient(to right,
-            rgb(255, 195, 110),
-            rgb(255, 146, 91));
+            rgb(3, 210, 207),
+            rgb(11, 126, 146));
     position: absolute;
     top: 20px;
     left: 100px;
@@ -191,7 +192,17 @@ header {
 .moveslider {
     left: 250px;
 }
-
+.clkbtn {
+    height: 60px;
+    width: 150px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right,
+            rgb(3, 210, 207),
+            rgb(11, 126, 146));
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
 .form-section {
     height: 500px;
     width: 1000px;
@@ -237,17 +248,7 @@ header {
     font-size: 14px;
 }
 
-.clkbtn {
-    height: 60px;
-    width: 150px;
-    border-radius: 50px;
-    background-image: linear-gradient(to right,
-            rgb(255, 195, 110),
-            rgb(255, 146, 91));
-    font-size: 22px;
-    border: none;
-    cursor: pointer;
-}
+
 
 /* For Responsiveness of the page */
 
